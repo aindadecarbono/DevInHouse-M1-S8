@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ngf_mock } from '../constantes/ngf-mock';
-import { lista } from '../models/ngf-model';
+import { bebidas } from '../constantes/bebidas-mock';
+import { ngf_mock } from '../constantes/cardapio-mock';
+import { comidas } from '../constantes/comidas-mock';
+import { listaBebidas, listaCardapio, listaComidas } from '../models/ngf-model';
 
 @Component({
   selector: 'NGF-content',
@@ -10,7 +12,10 @@ import { lista } from '../models/ngf-model';
 })
 export class ContentComponent implements OnInit {
 
-  listaDeProdutos:lista[] = ngf_mock;
+  listaDeProdutos:listaCardapio[] = ngf_mock;
+  listaComidas:listaComidas[] = comidas;
+  listaBebidas:listaBebidas[] = bebidas;  
+
 
   constructor() { }
 
