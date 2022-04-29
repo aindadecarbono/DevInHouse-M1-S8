@@ -6,11 +6,17 @@ export interface listaCardapio {
 
 
 export interface listaComidas{
-  titulo: string;
+  titulo: string
+  descricao: string
   preco: string
+  img: string
+  
 }
 
 export interface listaBebidas{
-  titulo: string;
+  titulo: string
+  descricao: string
   preco: string
+  img: string
+  
 }
