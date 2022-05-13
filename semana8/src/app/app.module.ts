@@ -9,7 +9,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { ComidaListaComponent } from './pages/comida-lista/comidas-lista.component';
 import { BebidasListaComponent } from './pages/bebidas-lista/bebidas-lista.component';
 import { Route, RouterModule } from '@angular/router';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { ListagemComponent } from './models/listagem/listagem.component'
 
 const ROUTES: Route[] = [
   {
@@ -32,7 +33,8 @@ const ROUTES: Route[] = [
     ContentComponent,
     HomeComponent,
     ComidaListaComponent,
-    BebidasListaComponent
+    BebidasListaComponent,
+    ListagemComponent
   ],
   imports: [
     BrowserModule,
