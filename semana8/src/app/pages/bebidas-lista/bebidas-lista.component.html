@@ -1,7 +1,12 @@
-<NGF-listagem
-  *ngFor="let bebida of listaBebidas"
-  [item]="bebida"
-></NGF-listagem>
+<main class="container mt-5">
+  <div class="row mb-2">
+    <NGF-listagem
+      class="col-6"
+      *ngFor="let bebida of listaBebidas"
+      [item]="bebida"
+    ></NGF-listagem>
+  </div>
+</main>
 
 <!-- <div class="container my-3">
   <div

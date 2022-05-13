@@ -1,23 +1,28 @@
-<div class="card shadow-sm">
-  <img
-    src="{{ item?.img }}"
-    alt="{{ item?.titulo }}"
-    title="{{ item?.titulo }}"
-  />
+<!-- d-flex justify-content-between align-items-center -->
+<div
+  class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+>
+  <div class="col p-4 d-flex flex-column position-static">
+    <img
+      src="{{ item?.img }}"
+      alt="{{ item?.titulo }}"
+      title="{{ item?.titulo }}"
+    />
 
-  <div class="card-body">
-    <p class="card-text text-center">{{ item?.titulo }}</p>
-    <div class="d-flex justify-content-between align-items-center">
-      <div class="d-block btn-group mx-auto">
-        <p class="card-text text-center">{{ item?.descricao }}</p>
-        <p class="card-text text-center">{{ item?.preco }}</p>
-        <button
-          (click)="click(item?.titulo)"
-          type="button"
-          class="btn btn-sm btn-outline-secondary"
-        >
-          Pedir
-        </button>
+    <div class="card-body">
+      <p class="card-text text-center">{{ item?.titulo }}</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-block btn-group mx-auto">
+          <p class="card-text text-center">{{ item?.descricao }}</p>
+          <p class="card-text text-center">{{ item?.preco }}</p>
+          <button
+            (click)="click(item?.titulo)"
+            type="button"
+            class="btn btn-sm btn-outline-secondary"
+          >
+            Pedir
+          </button>
+        </div>
       </div>
     </div>
   </div>
